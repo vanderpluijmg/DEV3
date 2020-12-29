@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/koga/Documents/Labo08/fraction.cpp
+sign.h
+/home/koga/Documents/Labo08/sign.h
+fraction.hpp
+/home/koga/Documents/Labo08/fraction.hpp
+
+/home/koga/Documents/Labo08/fraction.hpp
+string
+-
+ostream
+-
+tuple
+-
+sign.h
+/home/koga/Documents/Labo08/sign.h
+
+/home/koga/Documents/Labo08/sign.h
+string
+-
+ostream
+-
+
