@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/koga/Documents/Labo07/main.cpp
+iostream
+-
+array
+-
+iomanip
+-
+random.hpp
+/home/koga/Documents/Labo07/random.hpp
+randomTest.h
+/home/koga/Documents/Labo07/randomTest.h
+algorithm
+-
+
+/home/koga/Documents/Labo07/random.hpp
+random
+-
+utility
+-
+limits
+-
+ctime
+-
+
+/home/koga/Documents/Labo07/randomTest.h
+vector
+-
+map
+-
+

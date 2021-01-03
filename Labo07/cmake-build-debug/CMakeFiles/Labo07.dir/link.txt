@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Labo07.dir/main.cpp.o CMakeFiles/Labo07.dir/randomTest.cpp.o  -o Labo07 

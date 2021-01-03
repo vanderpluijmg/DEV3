@@ -1,0 +1,65 @@
+//
+// Created by koga on 22.12.20.
+//
+#include <array>
+#include <iostream>
+#include <algorithm>
+#include "randomTest.h"
+void print(const std::vector<int>&data){
+    for (int item : data){
+            std::cout<<item<<", ";
+    }
+    std::cout<<std::endl;
+}
+int numberOfOcc(int number, const std::array<int, 10>& array){
+    int cmpt = 0;
+    for(int i = 0; i<array.size(); i++){
+        if (array[i] == number)
+            cmpt++;
+    }
+    return cmpt;
+}
+void sort (std::vector<int>&data, bool ascending){
+    if(ascending)
+           std::sort(data.begin(),data.end(), [](int a, int b) { return a<b;});
+    else std::sort(data.begin(), data.end(), [](int a, int b) {return a>b;});
+}
+unsigned primeFactor (std::map<unsigned, unsigned>&result, unsigned value){
+    if (value <= 1)
+        return 0;
+    while (value > 1) {
+        for (auto i = 2; i < value+1; i++){
+
+                if (value%i==0) {
+                    result.insert(std::pair<unsigned, unsigned>(i, getMultpDecomp(i, value)));
+                    value = decompNumber(i, value);
+                }
+            }
+        }
+decompNumber    return result.size();
+}
+void printMapPrime(std::map<unsigned, unsigned > &myMap){
+    for (auto &x : myMap)
+        if (x.second !=1)
+        std::cout<<x.first<<"^"<<x.second<< " * ";
+        else  std::cout<<x.first<<" * ";
+}
+unsigned decompNumber(unsigned dividor, unsigned numberToDiv) {
+    while (numberToDiv != 0) {
+        if (numberToDiv % dividor == 0)
+            numberToDiv /= dividor;
+        else return numberToDiv;
+    }
+    return numberToDiv;
+}
+
+unsigned getMultpDecomp(unsigned dividor, unsigned numberToDiv){
+    unsigned cmpt = 0;
+    while (numberToDiv!=0){
+        if (numberToDiv%dividor == 0) {
+            numberToDiv /=dividor;
+            cmpt++;
+        }
+        else return cmpt;
+    }
+}
