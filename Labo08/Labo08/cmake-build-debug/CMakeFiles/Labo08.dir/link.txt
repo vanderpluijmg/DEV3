@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Labo08.dir/main.cpp.o CMakeFiles/Labo08.dir/fraction.cpp.o CMakeFiles/Labo08.dir/data_fraction.cpp.o CMakeFiles/Labo08.dir/utilsLabo08.cpp.o  -o Labo08 

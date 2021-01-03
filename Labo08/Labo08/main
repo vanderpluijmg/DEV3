@@ -1,0 +1,12 @@
+//
+// Created by koga on 23.12.20.
+//
+
+
+/*!
+ * file fraction_incomplete.h
+ *
+ * brief Définition de la classe nvs::Fraction ainsi que d'un
+ *        type (nvs::Fraction::Form) et de fonctions associées.
+ */
+
